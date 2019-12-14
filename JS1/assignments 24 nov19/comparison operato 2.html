@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1 style="text-align: center;">COMPARISON OPERATOR 2</h1>
+    <script>
+  var pass = "dontcrackthepassword";
+        var ask = prompt("enter your password");
+        if (ask == null || ask == "") {
+            //   document.write("Please enter your password");
+            document.write("<br>");
+            alert("Please enter your password");
+            var ask = prompt("enter your password");
+        }
+         if(ask === pass){
+
+                alert("corect!");
+         }
+            else {
+                alert("Incorrect Password");
+            
+            }
+        
+</script>
+</body>
+</html>

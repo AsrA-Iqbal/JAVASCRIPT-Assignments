@@ -1,0 +1,26 @@
+<html>
+
+<body>
+   
+        <script>
+                document.write("<h1>MULTI DIMENSIONAL ARRAY</h1>");
+                var country = [
+                    pakisan = ["lahore", "peshawar", "karachi", "quetta", "sibbi", "islamabad"],
+                    england = ["london", "manchester", "birmingham", "leeds", "bistrol", "banbury"],
+                    australia = ["sydney", "mellbourne", "brisbane", "perth", "cairns", "gold coast"],
+                ];
+                document.write(country);
+                document.write("<br>")
+                document.write(pakisan);
+                document.write("<br>");
+                document.write(england)
+                document.write("<br>");
+                document.write(australia);
+                document.write("<br>");
+                var one = window.prompt("choose country array number");
+                var two = window.prompt("choose city index number in country array");
+                alert(country[one][two]);
+            </script>
+
+</body>
+</html>

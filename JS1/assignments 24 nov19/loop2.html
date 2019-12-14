@@ -1,0 +1,58 @@
+<html>
+
+<body>
+   
+        <h1 style="text-align: center;">COUNTING SERIES</h1>
+        <script>
+            for (var t = 1; t <= 15; t++) {
+                document.write(t + "," + " ");
+            } document.write("<br>");
+        </script>
+    
+        <h1 style="text-align: center;">REVERSE COUNTING SERIES</h1>
+        <script>
+            for (var t = 10; t >= 1; t--) {
+                document.write(t + "," + "  ");
+            }
+            document.write("<br>");
+        </script>
+    
+    
+        <h1 style="text-align: center;">EVEN NUMBERS</h1>
+        <script>
+            for (var t = 0; t <= 20; t = t + 2) {
+                document.write(t + "," + "  ");
+            }
+            document.write("<br>");
+        </script>
+    
+    
+        <h1 style="text-align: center;">ODD NUMBERS</h1>
+        <script>
+            for (var t = 1; t <= 20; t = t + 2) {
+                document.write(t + "," + "  ");
+            }
+            document.write("<br>");
+        </script>
+    
+    
+        <h1 style="text-align: center;">EVEN NUMBERS IN K</h1>
+        <script>
+            for (var t = 2; t <= 20; t = t + 2) {
+                document.write(t + "k" + "," + "  ");
+            }
+            document.write("<br>");
+        </script>
+
+
+<h1 style="text-align: center;">STOP AT DESIRED VALUE</h1>
+<script>
+    var digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+    var stop = window.prompt("enter your stop value");
+    for (var b = 0; b <= stop; b++) {
+        document.write(digits[b] + " ");
+    }
+    document.write("<br>");
+</script>
+</body>
+</html>

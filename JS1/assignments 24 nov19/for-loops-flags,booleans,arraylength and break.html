@@ -1,0 +1,24 @@
+<html>
+
+<body>
+   
+        <h1 style="text-align: center;">SEARCH IN ARRAY</h1>
+        <script>
+            var bakery = ["cake", "apple pie", "cookie", "chips", "patties", "biscuits", "roll", "pizza", "samosa"];
+            var item = prompt("your bakery item?");
+            var check = false
+            for (var i = 0; i <= 9; i++) {
+                if (item === bakery[i]) {
+                    var check = true;
+                    alert("item found");
+                    document.write("here is your" + "  " + item);
+                    break;
+                }
+            }
+            if (check == false) {
+                alert("item not found");
+            }
+            document.write("<br>")
+        </script>
+</body>
+</html>

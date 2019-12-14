@@ -1,0 +1,82 @@
+<html>
+
+<body>
+   
+    <h1 style="text-align: center;">ARRAY</h1>
+    <script>
+        var clr = ["red", "blue", "yellow", "green", "black"];
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        var user = prompt("what color do you want add at the beginning of the array");
+        clr.unshift(user);
+        document.write("color added to the beginning array");
+        document.write("<br>");
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        var user1 = prompt("what color do you want to add at the end of the array");
+        clr.push(user1);
+        document.write("colors added to the end of array");
+        document.write("<br>");
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        clr.unshift("purple", "brown");
+        document.write("2 more colors added to array");
+        document.write("<br>");
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        clr.shift();
+        document.write("first color in array deleted");
+        document.write("<br>");
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        clr.pop();
+        document.write("last color in the array deleted");
+        document.write("<br>");
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        var user2 = prompt("what color do you want to add");
+        var index = prompt("index number");
+        clr.splice(index, 0, user2);
+        document.write("desired color at desired index added");
+        document.write("<br>");
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        var index2 = prompt("index number");
+        var user3 = prompt("how many color do you want to delete");
+        clr.splice(index2, user3);
+        document.write("desired color deleted");
+        document.write("<br>");
+        document.write(clr);
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+</body>
+</html>

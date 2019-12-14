@@ -1,0 +1,28 @@
+<html>
+
+<body>
+   
+        <h1 style="text-align:center">NESTED LOOP</h1>
+        <script>
+            var random = [24, 53, 78, 91, 12];
+            for (var i = 0; i <= random.length; i++) {
+                for (var j = 1; j <= random.length; j++) {
+                    if (random[j] < random[i]) {
+                        var smallest = random[j];
+                        console.log(smallest);
+                    }
+                    if (random[i] > random[j]) {
+                        var greatest = random[i];
+                        console.log(greatest);
+                    }
+                }
+            }
+            document.write("the is greatest number is:" + " " + greatest);
+            document.write("<br>");
+            document.write("the is smallest number is:" + " " + smallest);
+    
+        </script>
+    
+    
+</body>
+</html>
