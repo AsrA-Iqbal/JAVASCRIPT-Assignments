@@ -1,0 +1,51 @@
+<html>
+
+<body>
+    <script>
+    var rightnow = new Date();
+    document.write(rightnow,"<br>","<br>");
+    </script>
+<h3>Extracting Parts Of The Date And Time</h3>
+    <script>
+        document.write("<h3>Get month form Date()</h3>")
+    var months =["january","february","march","april","may","june","july","august","september","october","november","December"];
+    var now = new Date();
+    var themon = now.getMonth(); 
+    var nameofmon = months[themon];
+    document.write("the winter month:"+" "+ nameofmon,"<br>","<br>");
+    </script>
+    
+    <script>
+     document.write("<h3>Get day form Date()</h3>")
+    var days =["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    var now = new Date();
+    var theday = now.getDay(); 
+    var nameofday = days[theday];
+    document.write("today is :"+" "+ nameofday);
+    </script>
+
+
+<script>
+  document.write("<h3>Date object form Ramadan</h3>");
+  var pastdays = new Date("June 6, 2019");
+  document.write("Starting of Ramadan:"+" "+pastdays,"<br>","<br>");
+  var today = new Date();
+  document.write("Today:"+" "+today,"<br>","<br>");
+  var pasttime = pastdays.getTime();
+//   document.write(daysofpast);
+  var newtime = today.getTime();
+  var diff = newtime - pasttime;
+  var daydiff = diff /(1000 * 60 * 60 * 24);
+    document.write("differene of days:"+" "+daydiff,"<br>","<br>");
+daydiff = Math.floor(daydiff);
+document.write("differene of days:"+" "+daydiff+"days.");
+</script>
+<script>
+document.write("<h3>changing elements of date & time</h3>");
+var rightnow = new Date();
+document.write(rightnow,"<br>","<br>");
+rightnow.setFullYear(1919);
+document.write("<b>100 years before:<b>"+"  "+rightnow);
+</script>
+</body>
+</html>

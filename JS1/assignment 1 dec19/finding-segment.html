@@ -1,0 +1,74 @@
+<html>
+
+<body>
+    <script>
+        document.write("<b>");
+        document.write("<h1>Index of n</h1>")
+        document.write("<br>");
+        var text = "Pakistan";
+        document.write(text);
+        document.write("<br>");
+        var indexVal = text.indexOf("n");
+        document.write("the index of n:"+indexVal);  
+    </script>
+
+
+
+    <script>
+        document.write("<h1>Chap FINDING SEGMENTS</h1>");
+        var user = prompt("YOUR USERNAME PLEASE");
+        if ((user.indexOf("!") !== -1) || (user.indexOf("@") !== -1)) {
+        document.write("enter invalid username");
+        }
+        else {
+            document.write("valid username:"+"  "+user)
+        }
+    </script>
+
+
+<script>
+     document.write("<h1>Chap FINDING A CHARACTER AT A LOCATION</h1>");
+        var text = "The quick brown fox jumps over the lazy dog";
+        var text1=text.toLocaleLowerCase();
+        document.write(text1 , "<br>");
+        var count = (text1.match(/the/g)).length;
+        document.write("count number of occurrences of word:"+" "+ count);
+
+</script>
+
+
+    <!-- <script>
+          document.write("<h1>Chap FINDING A CHARACTER AT A LOCATION</h1>");
+        var text = "The quick brown fox jumps over the lazy dog";
+        var text1=text.toLocaleLowerCase();
+
+        alert(text1);
+        counter = 0;
+        startIndex = 0;
+        for(var i=0; i < text1.length; i++){
+            var newIndex = text1.indexOf("the", startIndex);
+            if(text1.slice(i,i + 3) === "the"){
+
+counter++;
+startIndex = newIndex + 1;
+console.log('matched' , i)
+            }
+            else{
+                break;
+            }
+ 
+                 }
+                </script> -->
+
+
+                <script>
+                    document.write("<h1>Finding A Character At A Location</h1>", "<br>");
+                var str ="Pakistani";
+                var str1=str.charAt(3);
+                document.write(str1);
+                
+                </script>
+
+</body>
+
+</html>

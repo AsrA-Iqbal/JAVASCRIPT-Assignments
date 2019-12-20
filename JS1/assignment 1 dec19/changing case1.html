@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <script>
+        document.write("<h1>CAPITAL LETTERS</h1>");
+        var ask=prompt("what is your name?");
+        var ask1=prompt("nwhere do you live?");
+        var ask2=prompt("where do you study?");
+        ask= ask.toLocaleUpperCase();
+        ask1= ask1.toLocaleUpperCase();
+        ask2= ask2.toLocaleUpperCase();
+        document.write(ask);
+        document.write("<br>");
+        document.write(ask1);
+        document.write("<br>");
+        document.write(ask2);
+        document.write("<br>");
+    </script>
+
+    <!-- <script>
+    var r= prompt("enter input");
+    function titleCase(string){
+        var sentence = string.toLowerCase().split("");
+        for(var i=0; i < sentence.length; i++){
+            sentence[i]=sentence[i][0].toUpperCase() + sentence[i].slice(1);
+        }
+        document.write(sentence.join(""));
+        return sentence;
+    }
+    titleCase(r);
+    </script> -->
+
+    <script>
+         document.write("<h1>TITLE CASE</h1>");
+        var ask=prompt("what is your name?");// type asra iqbal
+        var ask1=ask.slice(0,1);
+        var ask2=ask.slice(1,5);
+        var ask3=ask.slice(4,6);
+        var ask4=ask.slice(6,10);
+        console.log(ask2);
+        console.log(ask3);
+        console.log(ask4);
+        var ask1=ask1.toUpperCase();
+        var ask2=ask2.toLowerCase();
+        var ask3=ask3.toUpperCase();
+        var ask4=ask4.toLowerCase();
+        var asked= ask1 + ask2 +ask3 + ask4;
+        document.write(asked);
+        document.write("<br>");
+    </script>
+</body>
+</html>

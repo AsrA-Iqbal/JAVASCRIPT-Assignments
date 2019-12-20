@@ -1,0 +1,48 @@
+<html>
+<body>
+    <script>
+    
+    var bigdeci = Math.random();
+    document.write("Random Number is:"+"  "+bigdeci, "<br>","<br>");
+    var bigdecifordice = (bigdeci * 6) + 1;
+    document.write("Number Ranging is:"+"  "+bigdeci, "<br>","<br>");
+    var numberofdice = Math.floor(bigdecifordice);
+    document.write("Number Of Dice:"+"  "+numberofdice, "<br>","<br>");
+
+    </script>
+
+    <script>
+    var bigcoin = Math.random();
+    document.write("Random Number is:"+"  "+bigcoin, "<br>","<br>");
+    var bigcoinforcoin = (bigcoin * 2) + 1;
+    document.write("Number Ranging is:"+"  "+bigcoinforcoin, "<br>","<br>");
+    var numberofcion = Math.floor(bigcoinforcoin);
+    console.log(numberofcion)
+    if(numberofcion == 1){
+document.write("Value Of Coin:"+"  "+numberofcion+" "+ "="+ "Tails", "<br>","<br>");
+    
+    }
+    else{
+document.write("Value Of Coin:"+"  "+numberofcion+" "+ "="+ "Heads", "<br>","<br>");
+
+    }
+</script>
+
+<script>
+var bignum = Math.random();
+console.log(bignum);
+var bignum1 = (bignum * 10) + 1;
+console.log(bignum1);
+var bignum2 = Math.floor(bignum1);
+console.log(bignum2);
+var user = prompt("Enter any number betwween 1 to 10");
+if(user == bignum2){
+    document.write("congratulation your number matched:"+"  "+user);
+}
+else{
+    document.write("Not Match Secret Number:"+"  "+bignum2);
+}
+</script>
+</body>
+
+</html>
