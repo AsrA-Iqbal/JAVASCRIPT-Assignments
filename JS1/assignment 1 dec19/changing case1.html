@@ -17,18 +17,21 @@
         document.write("<br>");
     </script>
 
-    <!-- <script>
-    var r= prompt("enter input");
+    <script>
+    var user= prompt("enter input");
     function titleCase(string){
-        var sentence = string.toLowerCase().split("");
+        var sentence = string.toLowerCase().split(' ');
+        var result=[];
         for(var i=0; i < sentence.length; i++){
-            sentence[i]=sentence[i][0].toUpperCase() + sentence[i].slice(1);
+            var val = sentence[i];
+            result.push(val.replace(val[0], val[0].toUpperCase()));
+            // sentence[i]=sentence[i][0].toUpperCase() + sentence[i].slice(1);
         }
-        document.write(sentence.join(""));
+        document.write(sentence.join(' '));
         return sentence;
     }
-    titleCase(r);
-    </script> -->
+    titleCase(user);
+    </script>
 
     <script>
          document.write("<h1>TITLE CASE</h1>");
